@@ -1,0 +1,30 @@
+{
+    "name": "@goat-sdk/plugin-1delta",
+    "version": "0.1.0",
+    "description": "1delta protocol plugin for GOAT SDK",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "lint": "biome check .",
+        "lint:fix": "biome check --apply ."
+    },
+    "keywords": ["goat", "1delta", "defi", "margin", "trading", "lending", "borrowing"],
+    "author": "GOAT SDK Contributors",
+    "license": "MIT",
+    "dependencies": {
+        "@goat-sdk/core": "workspace:*",
+        "ethers": "^6.11.1",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3"
+    },
+    "peerDependencies": {
+        "@goat-sdk/wallet-evm": "workspace:*"
+    }
+}
